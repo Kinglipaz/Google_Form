@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linguaskill Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hiddenConfirm"
+      id="hiddenConfirm"
+      style="display: none;"
+      onload="if(submitted){window.location='index2.html'}"
+    ></iframe>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdlQGJng3eorfD1JvevnxVIi1xxCr9MF-SRnYXpGjp281F8iA/formResponse"
+              autocomplete="off"
+              class="sign-in-form"
+              method="post"
+              target="hiddenConfirm"
+              onsubmit="submitted=true"
+            >
+              <div class="heading">
+                <h2>Linguaskill Sign Up</h2>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    name="entry.1504133453"
+                    placeholder="Full Name"
+                  />
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    name="entry.2017077902"
+                    placeholder="Email Address"
+                  />
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    name="entry.1421263653"
+                    placeholder="Passport Number"
+                  />
+                </div>
+
+                <button type="submit" class="sign-btn">
+                  Get Registration Link
+                </button>
+                <p class="text">
+                  You will receive an invitation email to register your
+                  Linguaskill test. Or
+                  <a href="https://wa.link/yv6683" target="_blank"
+                    >ask for help</a
+                  >.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+    <script src="app.js"></script>
+  </body>
+</html>

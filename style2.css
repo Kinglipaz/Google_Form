@@ -1,0 +1,162 @@
+/* Import the Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Reset default styles */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set font for body and inputs */
+body,
+input {
+  font-family: "Poppins", sans-serif;
+  color: #005260;
+  /* Text color set to #005260 */
+}
+
+/* Main container styling */
+main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #ef833a;
+  /* Background color set to #EF833A */
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Box styling */
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 1020px;
+  height: 640px;
+  background-color: #f8f8f8;
+  /* Background color set to #F8F8F8 */
+  border-radius: 3.3rem;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+/* Inner box positioning */
+.inner-box {
+  position: absolute;
+  width: calc(100% - 4.1rem);
+  height: calc(100% - 4.1rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Form wrap styling */
+.forms-wrap {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  transition: 0.8s ease-in-out;
+}
+
+/* Form styling */
+form {
+  max-width: 60%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: opacity 0.02s 0.4s;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 27px;
+  margin-right: 0.3rem;
+}
+
+.logo h4 {
+  font-size: 1.1rem;
+  margin-top: -9px;
+  letter-spacing: -0.5px;
+  color: #005260;
+  /* Change the font color to #005260 */
+}
+
+.heading h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #005260;
+  /* Change the font color to #005260 */
+  padding-top: 40%;
+  padding-bottom: 27px;
+  padding-left: 30px;
+  /* Add padding to the bottom of the h2 */
+}
+
+.heading p.text {
+  color: #005260;
+  /* Change the font color to #005260 */
+  font-size: 0.8rem;
+  /* Change the font size to 0.8rem */
+  padding-left: 30px;
+  /* Add padding to the top */
+}
+
+/* Text color for links in the "ask for help" section */
+.text a {
+  color: #005260;
+  /* Text color set to #005260 */
+  transition: 0.3s;
+}
+
+.text a:hover {
+  color: #8371fd;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .box {
+    height: 640px; /* Restore original box height */
+    padding: 2rem; /* Restore original padding inside the box */
+    border-radius: 3.3rem; /* Restore border-radius */
+  }
+
+  .heading {
+    width: 120%; /* Adjust the width of the heading container */
+  }
+
+  .heading h2 {
+    font-size: 1.8rem; /* Reduce h2 font size for smaller screens */
+    padding-top: 70%; /* Adjust padding for smaller screens */
+    padding-bottom: 15px; /* Adjust padding for smaller screens */
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .heading p.text {
+    font-size: 0.8rem; /* Reduce text font size for smaller screens */
+    padding-left: 0; /* Remove left padding to stretch the text */
+  }
+}
